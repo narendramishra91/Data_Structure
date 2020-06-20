@@ -97,7 +97,7 @@ class binarSearchTree:
             print(x.key)
             
     def sucessor(self, data):
-        """ Return the key of predcessor of the given data """
+        """ Return the key of sucessor of the given data """
         
         # search for the node which has the matching key
         x = self.search(data)
@@ -122,7 +122,7 @@ class binarSearchTree:
                 print("given data is maximum")
                 
     def predcessor(self, data):
-        """ Return the key of sucessor of the given data """
+        """ Return the key of predcessor of the given data """
         
         # search for the node with the matching key
         x = self.search(data)
