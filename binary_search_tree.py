@@ -81,7 +81,7 @@ class binarSearchTree:
         Return the minimum of the subtree rooted at node.
         
         parameter:
-        node(object of binaryTreeNode): root of the tree minimum of which you want to compute. """
+            node(object of binaryTreeNode): root of the tree minimum of which you want to compute. """
         if node != None:
             while node.left != None:
                 node = node.left
@@ -96,7 +96,7 @@ class binarSearchTree:
         Return the maximum of the subtree rooted at node.
         
         parameter:
-        node(object of binaryTreeNode): root of the tree maximum of which you want to compute.
+            node(object of binaryTreeNode): root of the tree maximum of which you want to compute.
         """
         if node != None:
             while node.right != None:
@@ -109,7 +109,7 @@ class binarSearchTree:
         """ It return the node whose key matches the given data.
         
         Parameters:
-        data: key of the node which u want to search
+            data: key of the node which u want to search
         """
         temp = self.root
         while temp != None:
@@ -128,7 +128,7 @@ class binarSearchTree:
         i.e. first print the root then left subtree then right subtree
         
         Parameter:
-        x : Root of the tree for which you want to compute the preorder. 
+            x : Root of the tree for which you want to compute the preorder. 
         """
         if x != None:
             print(x.key)
@@ -140,7 +140,7 @@ class binarSearchTree:
         i.e. first print the left subtree then root and then the right subtree
         
         Parameter:
-        x: Root of the tree for which u want to compute the inorder.
+            x: Root of the tree for which u want to compute the inorder.
         """
         if x != None:
             self.inorder(x.left)
@@ -152,7 +152,7 @@ class binarSearchTree:
         i.e. first print the left subtree then right subtree and then the root 
         
         Parameter:
-        x: Root of the tree for which u want to compute the postorder.
+            x: Root of the tree for which u want to compute the postorder.
         """
         if x != None:
             self.postorder(x.left)
@@ -163,7 +163,7 @@ class binarSearchTree:
         """ Return the key of sucessor of the given data.
         
         Parameter:
-        data: Key of the node for which u want to compute the sucessor.
+            data: Key of the node for which u want to compute the sucessor.
         """
         
         # search for the node which has the matching key
@@ -193,7 +193,7 @@ class binarSearchTree:
         Return the key of sucessor of the given data 
         
         Parameter:
-        data: Key of the node for which u want to compute the predcessor.
+            data: Key of the node for which u want to compute the predcessor.
         """
         
         # search for the node with the matching key
@@ -221,8 +221,8 @@ class binarSearchTree:
         """Replaces subtree rooted at u to subtree rooted at v.
         
         Paraameters:
-        u (object of class binaryTreeNode): Node which you want to remove.
-        v (object of class binaryTreeNode): Node which you want to add.
+            u (object of class binaryTreeNode): Node which you want to remove.
+            v (object of class binaryTreeNode): Node which you want to add.
         """
         
         # if u is root node
@@ -246,7 +246,7 @@ class binarSearchTree:
         Delete the node which matches the given data.
         
         Parameter:
-        data: key of the node which u wnat to delete.
+            data: key of the node which u wnat to delete.
         """
         
         # serch for the node which has the given data
@@ -289,7 +289,7 @@ class binarSearchTree:
         Returns the height of the tree rooted at given node.
         
         Parameters:
-        node(object of binaryTreeNode class): root of the tree whose height you want to compute
+            node(object of binaryTreeNode class): root of the tree whose height you want to compute
         """
         if node is None:
             return 0
